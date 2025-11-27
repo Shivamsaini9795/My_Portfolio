@@ -10,7 +10,7 @@ export default function RealConnect() {
   return (
     <>
       {/* Floating Menu */}
-      <div className="fixed top-1/2 right-0 transform -translate-y-1/2 z-50 flex flex-col items-center gap-3">
+      <div className="fixed top-[60%] right-0 transform -translate-y-1/2 z-50 flex flex-col items-center gap-3">
         
         {/* Expandable Options */}
         <AnimatePresence>
