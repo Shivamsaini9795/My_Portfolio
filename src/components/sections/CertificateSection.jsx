@@ -7,85 +7,80 @@ import { motion, AnimatePresence } from "framer-motion";
 
 
 const certificates = [
-  {
-    id: 1,
-    title: "Data Science & AI/ML Internship Trainee | IBM–BBDU",
-    img: "/certificates/intershipFSD.jpg",
-    alt: "Data Science & AI/ML Internship Trainee | IBM–BBDU Certificate Image",
-    description:
-      "Certificate of completion for the Data Science & AI/ML Internship Trainee program at IBM–BBDU.",
-  },
-  {
-    id: 2,
-    title: "Artificial Intelligence Analyst",
-    img: "/certificates/AI certificate.jpg",
-    alt: "Artificial Intelligence Analyst Certificate Image",
-    description:
-      "Certificate of completion for the Artificial Intelligence Analyst program.",
-  },
-  {
-    id: 3,
-    title: "Business Intelligence",
-    img: "/certificates/Bi.jpg",
-    alt: "Business Intelligence Certificate Image",
-    description: "Certificate for completing the Business Intelligence program.",
-  },
-  {
-    id: 4,
-    title: "Machine Learning with Python",
-    img: "/certificates/machine learning.jpg",
-    alt: "Machine Learning Certificate Image",
-    description:
-      "Certificate for completing the Machine Learning with Python program.",
-  },
-  {
-    id: 5,
-    title: "NoSQL Database Management",
-    img: "/certificates/NoSql and DBaas certificate.jpg",
-    alt: "NoSQL Database Management Certificate Image",
-    description:
-      "Certificate for completing the NoSQL Database Management program.",
-  },
-  {
-    id: 6,
-    title: "AI Certification Badge",
-    img: "/certificates/AI Certification.jpg",
-    alt: "AI Certification Image",
-    description:
-      "Certificate for completing the AI Certification program.",
-  },
-  {
-    id: 7,
-    title: "Mobile App Development",
-    img: "/certificates/App.jpg",
-    alt: "Mobile App Development Image",
-    description:
-      "Certificate for completing the Mobile App Development program.",
-  },
-  {
-    id: 8,
-    title: "Software Development Internship",
-    img: "/certificates/internship.jpg",
-    alt: "Software Development Internship Image",
-    description:
-      "Certificate for completing the Software Development Internship program.",
-  },
-  {
-    id: 9,
-    title: "MERN full stack Internship",
-    img: "/certificates/EduNet.jpg",
-    alt: "MERN full stack Internship Image",
-    description:
-      "Certificate for completing the MERN full stack Internship program.",
-  },
-  {
-    id: 10,
-    title: "python with Django summer Internship Training",
-    img: "/certificates/Summer.jpg",
-    alt: "python with Django summer Internship Training Image",
-    description:
-      "Certificate for completing the python with Django summer Internship Training program.",
-  },
+ {
+  id: 1,
+  title: "Web Development Internship Trainee | Elevate Labs",
+  img: "/certificates/IntershipFSD.jpg",
+  alt: "Web Development Internship Trainee Certificate — Elevate Labs",
+  description:
+    "Certificate of completion for the Web Development Internship Trainee program at Elevate Labs.",
+},
+{
+  id: 2,
+  title: "Java Basic",
+  img: "/certificates/Java.jpg",
+  alt: "Java Basic Certification Image",
+  description:
+    "Certificate of completion for the Java Basic programming course.",
+},
+{
+  id: 3,
+  title: "Codex Event Participated",
+  img: "/certificates/Codex.jpg",
+  alt: "Codex Event Participation Certificate Image",
+  description:
+    "Certificate awarded for participation in the Codex technical event.",
+},
+{
+  id: 4,
+  title: "Internship Aptitude Test",
+  img: "/certificates/Apti Test.jpg",
+  alt: "Internship Aptitude Test Certificate Image",
+  description:
+    "Certificate awarded for successfully clearing the Internship Aptitude Test.",
+},
+{
+  id: 5,
+  title: "Certificate of Appreciation",
+  img: "/certificates/StudentGuide.jpg",
+  alt: "Certificate of Appreciation Image",
+  description:
+    "Certificate awarded as a token of appreciation for valuable contribution.",
+},
+{
+  id: 6,
+  title: "Certificate of Completion — ADCA",
+  img: "/certificates/ADCA.jpg",
+  alt: "ADCA Course Completion Certificate Image",
+  description:
+    "Certificate of completion for the Advanced Diploma in Computer Applications (ADCA) course.",
+},
+{
+  id: 7,
+  title: "Certificate of Completion — CCC",
+  img: "/certificates/CCC.jpg",
+  alt: "CCC Course Completion Certificate Image",
+  description:
+    "Certificate of completion for the Course on Computer Concepts (CCC).",
+},
+{
+  id: 8,
+  title: "Full Stack Java Development",
+  img: "/certificates/internship.jpg",
+  alt: "Full Stack Java Development Certificate Image",
+  description:
+    "Certificate of completion for the Full Stack Java Development program.",
+},
+{
+  id: 9,
+  title: "MERN full stack Internship",
+  img: "/certificates/EduNet.jpg",
+  alt: "MERN Full Stack Internship Certificate Image",
+  description:
+    "Certificate of completion for the MERN Full Stack Internship program.",
+},
+
+  
 ];
 
 
@@ -183,13 +178,13 @@ export default function CertificateSection() {
         <AnimatePresence>
           {selectedIndex !== null && (
             <motion.div
-              className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-6"
+              className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[9999] p-6"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
             >
               <motion.div
-                className="relative w-full max-w-5xl bg-white rounded-2xl shadow-2xl p-6 flex flex-col items-center"
+                className="relative w-full max-w-5xl bg-white rounded-2xl shadow-2xl p-6 flex flex-col items-center z-[99999]"
                 initial={{ scale: 0.9 }}
                 animate={{ scale: 1 }}
                 exit={{ scale: 0.9 }}
@@ -197,7 +192,7 @@ export default function CertificateSection() {
               >
                 {/* Close Button */}
                 <button
-                  className="absolute top-4 right-4 text-white bg-red-600 rounded-full p-2 hover:bg-red-700 transition z-50"
+                  className="absolute top-16 mt-10 right-4 text-white bg-red-600 rounded-full p-2 hover:bg-red-700 transition z-[100000]"
                   onClick={closeModal}
                 >
                   <X size={22} />

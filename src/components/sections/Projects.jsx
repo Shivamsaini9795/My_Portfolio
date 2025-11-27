@@ -27,7 +27,7 @@ const projects = [
     title: 'My Portfolio',
     description: 'A personal portfolio showcasing my projects, skills, and experience.',
     tech: ['Java','React', 'Tailwind CSS', 'Js','API'],
-    github: 'https://github.com/PremKumarY/premKyadav.git',
+    github: 'https://github.com/Shivamsaini9795/My_Portfolio',
   },
 ];
 
