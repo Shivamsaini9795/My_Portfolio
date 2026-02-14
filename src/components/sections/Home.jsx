@@ -113,7 +113,7 @@ export default function Home() {
                         transition={{ delay: 0.8, duration: 0.8 }}
                     >
                         <Link
-                            to="/Shivam Resume.pdf"
+                            to="/Shivam Saini Resume.pdf"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full text-white font-semibold transition duration-300"
