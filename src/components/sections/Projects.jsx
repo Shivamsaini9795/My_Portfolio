@@ -1,22 +1,40 @@
 import React from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
 
   {
-    title: 'Modern Decoration Shop Web App',
-    description: 'A modern decoration shop web app where users can explore décor items and easily book or contact for customized decoration services.',
-    tech: ['React', 'Tailwind', 'Springboot', 'Mysql','API'],
-    github: 'https://github.com/Shivamsaini9795/DecorationShop',
-  },
+  title: "Event Booking System",
+  description:
+    "A full-stack Event Booking System that allows users to browse event decoration services, choose designs, book events, make secure online payments, and receive booking confirmations. It includes an admin dashboard for managing bookings, services, and customers.",
+  tech: [
+    "React.js",
+    "Spring Boot",
+    "MongoDB",
+    "Tailwind CSS",
+    "REST API",
+    "Razorpay Payment Gateway",
+  
+  ],
+  github: "https://github.com/Shivamsaini9795/DecorationShop",
+  live: "https://shivamflowerdecoration.shop",
+},
   {
-    title: 'System Administration',
-    description: 'A web application for Efficiently monitor, control, and maintain all aspects of the system from one centralized admin interface and secure system functionality.',
-    tech: ['HTML5', 'CSS3', 'javascript', 'MySQL','API'],
-    github: 'https://github.com/Shivamsaini9795/Admin_Page',
-  },
+  title: "Admin Dashboard",
+  description:
+    "A responsive Admin Dashboard designed to manage event bookings, customers, services, and payment details from a centralized interface with a clean and user-friendly experience.",
+  tech: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "Bootstrap",
+    "REST API",
+  ],
+  github: "https://github.com/Shivamsaini9795/Admin_Page",
+  live: "https://admin.shivamflowerdecoration.shop",
+},
   {
     title: 'Journey Planner',
     description: 'Your all-in-one travel assistant to explore destinations, create itineraries, and manage every detail of your journey with ease.',
@@ -66,16 +84,30 @@ export default function Projects() {
                   </span>
                 ))}
               </div>
-              {project.github && (
+              <div className="flex items-center gap-4 mt-4">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline flex items-center gap-1 text-sm"
+                  >
+                    <FaGithub /> View Code
+                  </a>
+                )}
+
+              {project.live && (
                 <a
-                  href={project.github}
-                  target="_blank"
+                  href={project.live}
+                  target="shivamflowerdecoration.netlify.app"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline flex items-center gap-1 text-sm"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-lg flex items-center gap-2 text-sm transition"
                 >
-                  <FaGithub /> View Code
+                  <FaExternalLinkAlt />
+                  Live Project
                 </a>
               )}
+            </div>
             </motion.div>
           ))}
         </div>

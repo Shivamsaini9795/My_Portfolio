@@ -5,82 +5,97 @@ import { X, Download, ChevronLeft, ChevronRight } from "lucide-react";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "framer-motion";
 
+const featuredAchievement = {
+  title: "🏆 Best Project Award (3rd Rank)",
+  img: "/BestProject_Award.jpeg", // apni image ka naam
+  alt: "Best Project Award",
+  description:
+    "Awarded 3rd Rank for developing the Event Booking System during the B.Sc. IT Project Exhibition. The project was recognized for its innovation, functionality, and user experience.",
+};
+
+const classRepresentative = {
+  title: "👨‍💼 Class Representative (CR)",
+  img: "/Cr_Badge.jpeg", // apni badge image ka naam
+  alt: "Class Representative Badge",
+  description:
+    "Served as the Class Representative (CR) of B.Sc. IT during the 3rd year, acting as the communication bridge between students and faculty while coordinating academic and departmental activities.",
+};
 
 const certificates = [
- {
-  id: 1,
-  title: "Web Development Internship Trainee | Elevate Labs",
-  img: "/certificates/IntershipFSD.jpg",
-  alt: "Web Development Internship Trainee Certificate — Elevate Labs",
-  description:
-    "Certificate of completion for the Web Development Internship Trainee program at Elevate Labs.",
-},
-{
-  id: 2,
-  title: "Java Basic",
-  img: "/certificates/Java.jpg",
-  alt: "Java Basic Certification Image",
-  description:
-    "Certificate of completion for the Java Basic programming course.",
-},
-{
-  id: 3,
-  title: "Codex Event Participated",
-  img: "/certificates/Codex.jpg",
-  alt: "Codex Event Participation Certificate Image",
-  description:
-    "Certificate awarded for participation in the Codex technical event.",
-},
-{
-  id: 4,
-  title: "Internship Aptitude Test",
-  img: "/certificates/Apti Test.jpg",
-  alt: "Internship Aptitude Test Certificate Image",
-  description:
-    "Certificate awarded for successfully clearing the Internship Aptitude Test.",
-},
-{
-  id: 5,
-  title: "Certificate of Appreciation",
-  img: "/certificates/StudentGuide.jpg",
-  alt: "Certificate of Appreciation Image",
-  description:
-    "Certificate awarded as a token of appreciation for valuable contribution.",
-},
-{
-  id: 6,
-  title: "Certificate of Completion — ADCA",
-  img: "/certificates/ADCA.jpg",
-  alt: "ADCA Course Completion Certificate Image",
-  description:
-    "Certificate of completion for the Advanced Diploma in Computer Applications (ADCA) course.",
-},
-{
-  id: 7,
-  title: "Certificate of Completion — CCC",
-  img: "/certificates/CCC.jpg",
-  alt: "CCC Course Completion Certificate Image",
-  description:
-    "Certificate of completion for the Course on Computer Concepts (CCC).",
-},
-{
-  id: 8,
-  title: "Full Stack Java Development",
-  img: "/certificates/internship.jpg",
-  alt: "Full Stack Java Development Certificate Image",
-  description:
-    "Certificate of completion for the Full Stack Java Development program.",
-},
-{
-  id: 9,
-  title: "MERN full stack Internship",
-  img: "/certificates/EduNet.jpg",
-  alt: "MERN Full Stack Internship Certificate Image",
-  description:
-    "Certificate of completion for the MERN Full Stack Internship program.",
-},
+  {
+    id: 1,
+    title: "Web Development Internship Trainee | Elevate Labs",
+    img: "/certificates/IntershipFSD.jpg",
+    alt: "Web Development Internship Trainee Certificate — Elevate Labs",
+    description:
+      "Certificate of completion for the Web Development Internship Trainee program at Elevate Labs.",
+  },
+  {
+    id: 2,
+    title: "Java Basic",
+    img: "/certificates/Java.jpg",
+    alt: "Java Basic Certification Image",
+    description:
+      "Certificate of completion for the Java Basic programming course.",
+  },
+  {
+    id: 3,
+    title: "Codex Event Participated",
+    img: "/certificates/Codex.jpg",
+    alt: "Codex Event Participation Certificate Image",
+    description:
+      "Certificate awarded for participation in the Codex technical event.",
+  },
+  {
+    id: 4,
+    title: "Internship Aptitude Test",
+    img: "/certificates/Apti Test.jpg",
+    alt: "Internship Aptitude Test Certificate Image",
+    description:
+      "Certificate awarded for successfully clearing the Internship Aptitude Test.",
+  },
+  {
+    id: 5,
+    title: "Certificate of Appreciation",
+    img: "/certificates/StudentGuide.jpg",
+    alt: "Certificate of Appreciation Image",
+    description:
+      "Certificate awarded as a token of appreciation for valuable contribution.",
+  },
+  {
+    id: 6,
+    title: "Certificate of Completion — ADCA",
+    img: "/certificates/ADCA.jpg",
+    alt: "ADCA Course Completion Certificate Image",
+    description:
+      "Certificate of completion for the Advanced Diploma in Computer Applications (ADCA) course.",
+  },
+  {
+    id: 7,
+    title: "Certificate of Completion — CCC",
+    img: "/certificates/CCC.jpg",
+    alt: "CCC Course Completion Certificate Image",
+    description:
+      "Certificate of completion for the Course on Computer Concepts (CCC).",
+  },
+  {
+    id: 8,
+    title: "Full Stack Java Development",
+    img: "/certificates/internship.jpg",
+    alt: "Full Stack Java Development Certificate Image",
+    description:
+      "Certificate of completion for the Full Stack Java Development program.",
+  },
+  {
+    id: 9,
+    title: "MERN full stack Internship",
+    img: "/certificates/EduNet.jpg",
+    alt: "MERN Full Stack Internship Certificate Image",
+    description:
+      "Certificate of completion for the MERN Full Stack Internship program.",
+  },
 
-  
+
 ];
 
 
@@ -116,7 +131,7 @@ export default function CertificateSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          My Certificates
+          Certificates & <span className="text-blue-500">Achievements</span>
         </motion.h2>
 
         <motion.p
@@ -128,6 +143,84 @@ export default function CertificateSection() {
           A collection of my professional achievements, certifications, and
           training programs that showcase my expertise. 📜
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="mb-14"
+        >
+          <div className="bg-gradient-to-r from-yellow-500/20 via-orange-500/20 to-yellow-500/20 border border-yellow-500 rounded-3xl p-8 shadow-2xl">
+
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+
+              <div>
+                <img
+                  src={featuredAchievement.img}
+                  alt={featuredAchievement.alt}
+                  className="rounded-2xl shadow-xl w-full max-h-[430px] object-contain"
+                />
+              </div>
+
+              <div className="text-left">
+
+                <span className="inline-block bg-yellow-500 text-black font-bold px-4 py-2 rounded-full mb-4">
+                  ⭐ Featured Achievement
+                </span>
+
+                <h3 className="text-3xl font-bold text-yellow-400 mb-5">
+                  {featuredAchievement.title}
+                </h3>
+
+                <p className="text-gray-300 leading-8 text-lg">
+                  {featuredAchievement.description}
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </motion.div>
+
+        <motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, delay: 0.2 }}
+  className="mb-14"
+>
+  <div className="bg-gradient-to-r from-blue-500/20 via-cyan-500/20 to-blue-500/20 border border-blue-500 rounded-3xl p-8 shadow-2xl">
+
+    <div className="grid md:grid-cols-2 gap-8 items-center">
+
+      <div>
+        <img
+          src={classRepresentative.img}
+          alt={classRepresentative.alt}
+          className="rounded-2xl shadow-xl w-full max-h-[430px] object-contain"
+        />
+      </div>
+
+      <div className="text-left">
+
+        <span className="inline-block bg-blue-600 text-white font-bold px-4 py-2 rounded-full mb-4">
+          👨‍💼 Leadership
+        </span>
+
+        <h3 className="text-3xl font-bold text-blue-400 mb-5">
+          {classRepresentative.title}
+        </h3>
+
+        <p className="text-gray-300 leading-8 text-lg">
+          {classRepresentative.description}
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</motion.div>
 
         {/* Certificates Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
