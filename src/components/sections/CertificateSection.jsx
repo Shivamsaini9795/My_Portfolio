@@ -81,7 +81,7 @@ const certificates = [
   {
     id: 8,
     title: "Full Stack Java Development",
-    img: "/certificates/internship.jpg",
+    img: "/certificates/FSD_Java.jpeg",
     alt: "Full Stack Java Development Certificate Image",
     description:
       "Certificate of completion for the Full Stack Java Development program.",
