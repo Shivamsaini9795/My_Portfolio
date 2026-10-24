@@ -24,6 +24,14 @@ const classRepresentative = {
 const certificates = [
   {
     id: 1,
+    title: "Full Stack Java Development",
+    img: "/certificates/FSD_Java.jpeg",
+    alt: "Full Stack Java Development Certificate Image",
+    description:
+      "Certificate of completion for the Full Stack Java Development program.",
+  },
+  {
+    id: 2,
     title: "Web Development Internship Trainee | Elevate Labs",
     img: "/certificates/IntershipFSD.jpg",
     alt: "Web Development Internship Trainee Certificate — Elevate Labs",
@@ -31,7 +39,7 @@ const certificates = [
       "Certificate of completion for the Web Development Internship Trainee program at Elevate Labs.",
   },
   {
-    id: 2,
+    id: 3,
     title: "Java Basic",
     img: "/certificates/Java.jpg",
     alt: "Java Basic Certification Image",
@@ -39,7 +47,7 @@ const certificates = [
       "Certificate of completion for the Java Basic programming course.",
   },
   {
-    id: 3,
+    id: 4,
     title: "Codex Event Participated",
     img: "/certificates/Codex.jpg",
     alt: "Codex Event Participation Certificate Image",
@@ -47,7 +55,7 @@ const certificates = [
       "Certificate awarded for participation in the Codex technical event.",
   },
   {
-    id: 4,
+    id: 5,
     title: "Internship Aptitude Test",
     img: "/certificates/Apti Test.jpg",
     alt: "Internship Aptitude Test Certificate Image",
@@ -55,7 +63,7 @@ const certificates = [
       "Certificate awarded for successfully clearing the Internship Aptitude Test.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Certificate of Appreciation",
     img: "/certificates/StudentGuide.jpg",
     alt: "Certificate of Appreciation Image",
@@ -63,7 +71,7 @@ const certificates = [
       "Certificate awarded as a token of appreciation for valuable contribution.",
   },
   {
-    id: 6,
+    id: 7,
     title: "Certificate of Completion — ADCA",
     img: "/certificates/ADCA.jpg",
     alt: "ADCA Course Completion Certificate Image",
@@ -71,21 +79,14 @@ const certificates = [
       "Certificate of completion for the Advanced Diploma in Computer Applications (ADCA) course.",
   },
   {
-    id: 7,
+    id: 8,
     title: "Certificate of Completion — CCC",
     img: "/certificates/CCC.jpg",
     alt: "CCC Course Completion Certificate Image",
     description:
       "Certificate of completion for the Course on Computer Concepts (CCC).",
   },
-  {
-    id: 8,
-    title: "Full Stack Java Development",
-    img: "/certificates/FSD_Java.jpeg",
-    alt: "Full Stack Java Development Certificate Image",
-    description:
-      "Certificate of completion for the Full Stack Java Development program.",
-  },
+  
   {
     id: 9,
     title: "MERN full stack Internship",
